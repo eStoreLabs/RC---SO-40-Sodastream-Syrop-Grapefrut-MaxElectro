@@ -209,7 +209,6 @@
   color: inherit;
   font-family: inherit;
   font-size: 28px;
-  font-family: "HurmeGeometricSans3-Bold", sans-serif;
   text-align: center;
   text-transform: uppercase;
 }
@@ -229,13 +228,24 @@
   font-family: inherit;
   font-weight: inherit;
   font-size: 16px;
-  font-family: "HurmeGeometricSans3-Light", sans-serif;
   text-align: left;
 }
 
 #es-sodastream.es-sodastream .es-vitamins__badge {
   font-size: 30px;
   font-weight: 700;
+}
+.es-vitamins__text--middlem {
+  display: block;
+}
+.es-vitamins__text--bottomm {
+  display: block;
+}
+.es-vitamins__text--middle {
+  display: none;
+}
+.es-vitamins__text--bottom {
+  display: none;
 }
 
 #es-sodastream.es-sodastream .es-vitamins__footer {
@@ -1015,7 +1025,7 @@
   }
   .es-vitamins__badge--zinc {
     bottom: 20%;
-    left: -354px;
+    left: -339px;
     transform: scale(1.6);
     align-items: start;
     padding-left: 12px;
@@ -1031,19 +1041,27 @@
     font-size: 16px;
   }
   .es-vitamins__text--top {
-    top: 9%;
+    top: 7%;
     right: 31%;
     text-align: right !important;
   }
   .es-vitamins__text--middle {
-    top: 23%;
+    top: 27%;
     left: 40%;
     text-align: left !important;
+    display: block;
   }
   .es-vitamins__text--bottom {
-    top: 44%;
-    right: 53%;
+    top: 42%;
+    right: 48%;
+    display: block;
     text-align: right !important;
+  }
+  .es-vitamins__text--middlem {
+    display: none;
+  }
+  .es-vitamins__text--bottomm {
+    display: none;
   }
   #es-sodastream.es-sodastream .es-vitamins__footer {
     margin-top: -20px;
@@ -1119,5 +1137,10 @@
   .swiper-button-next {
     height: 40px;
     width: 40px;
+  }
+}
+@media (min-width: 960px) {
+  .es-vitamins__text--bottom {
+    right: 45%;
   }
 } /*# sourceMappingURL=style.css.map */
